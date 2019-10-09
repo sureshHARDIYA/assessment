@@ -1,0 +1,33 @@
+fragment OfferFragment on Offers {
+  offerId
+  approvalStatus
+  offerPrice
+  address
+  reviewPipeline
+  offerStage
+  loanContingency
+  appraisalContingency
+  inspectionContingency
+  offerDetails
+  propertySafe
+  propertyHighRisk
+  propertyOverpriced
+  uuid
+  redfinLink
+  zillowLink
+  hcPdf
+  disclosurePacket
+  structuralNotes
+  appraisalNotes
+  naturalHazardNotes
+  valueNotes
+  summaryNotes
+  minPrice
+  maxPrice
+  offerDueDate
+  Broker
+  Customer
+  seq
+  createdAt
+  updatedAt
+}

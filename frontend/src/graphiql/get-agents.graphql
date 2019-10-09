@@ -1,0 +1,15 @@
+query getAllAgents{
+  contactsByCustomerType(customerType: "Broker") {
+    firstname
+    firstname
+    lastname
+    customerType
+    vid
+    id
+    email
+    agentId
+    coBuyerEmail
+    coBuyerLastname
+    coBuyerLastname
+  }
+}

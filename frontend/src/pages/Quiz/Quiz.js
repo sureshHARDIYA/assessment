@@ -11,7 +11,7 @@ import InfiniteScroll from 'components/InfiniteScroll';
 
 import PeopleCard from './PeopleCard';
 
-import { GET_USERS } from 'graphql/user';
+// import { GET_QUIZES } from 'graphql/quiz';
 import { PEOPLE_PAGE_USERS_LIMIT } from 'constants/DataLimit';
 
 const Root = styled(Container)`
@@ -39,14 +39,14 @@ const Quiz = () => {
 
   return (
     <Root maxWidth="md">
-      <Head title="Find new People" />
-
+      <Head title="Find new Quiz" />
       <Query
-        query={GET_USERS}
+        // query={GET_QUIZES}
         variables={variables}
         notifyOnNetworkStatusChange
       >
         {({ data, loading, fetchMore, networkStatus }) => {
+          console.log('here here....');
           if (loading && networkStatus === 1) {
             return (
               <PeopleContainer>
@@ -54,6 +54,8 @@ const Quiz = () => {
               </PeopleContainer>
             );
           }
+
+          console.log('potty potty', data);
 
           const { users, count } = data.getUsers;
 

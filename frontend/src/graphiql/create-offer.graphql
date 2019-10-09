@@ -1,0 +1,9 @@
+#import "./fragment/offer.graphql"
+
+mutation createOffer($offer: OfferFragment) {
+  createOffer(input: $offer) {
+    offer {
+      offerId
+    }
+  }
+}

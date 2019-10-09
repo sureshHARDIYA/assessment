@@ -1,0 +1,19 @@
+query {
+  contactsByCustomerType(customerType: "Customer") {
+        id
+        email
+        agentId
+        agentName
+        agentEmail
+        firstname
+        lastname
+        schoolDistrict
+        vid
+        phone
+        stakeholderType
+        coBuyerLastname
+        coBuyerEmail
+        coBuyerFirstname
+        customerType
+  }
+}

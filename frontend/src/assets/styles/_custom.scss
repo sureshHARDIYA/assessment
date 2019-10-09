@@ -1,0 +1,118 @@
+.ant-virtualized-select .VirtualSelectGrid {
+  width: 100% !important;
+}
+
+.full {
+  width: 100% !important;
+}
+
+form.form-container {
+  margin-top: 20px;
+
+  .ant-form-item-label {
+    font-weight: 600;
+  }
+
+  .ant-input-number {
+    @extend .full;
+  }
+
+  .ant-input {
+    &:focus {
+      box-shadow: none;
+    }
+  }
+
+  .ant-card {
+    & + .ant-card {
+      margin-top: 16px;
+    }
+  }
+}
+
+.table-outline {
+  border: 1px solid #c2cfd6;
+}
+
+.table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1rem;
+  border-collapse: collapse;
+  background-color: transparent;
+
+  th, td {
+    padding: 0.3rem;
+    border-top: 1px solid #c2cfd6;
+
+    > .ant-form-item {
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+  }
+
+  tbody {
+    th, td {
+      border: 1px dashed #dfe2e4;
+      border-top: 1px solid #c2cfd6;
+    }
+  }
+
+  .ant-upload {
+    min-height: 42px;
+
+    button {
+      border: none;
+      box-shadow: none;
+      background-color: transparent;
+    }
+
+    .ant-upload-drag-container {
+      background-color: #4dbd74;
+    }
+  }
+}
+
+.max-400 {
+  width: 400px;
+  max-width: 400px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  transition: all 0.3s, border 0s;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.action-group {
+  margin-top: 16px;
+}
+
+.pull-right {
+  float: right;
+}
+
+.pull-left {
+  float: left;
+}
+
+.error {
+  .ant-upload.ant-upload-drag {
+    color: red;
+    border-color: red;
+
+    .ant-upload-drag-container {
+      color: inherit;
+    }
+  }
+}
+
+.success {
+  .ant-upload.ant-upload-drag {
+    color: green;
+    border-color: green;
+
+    .ant-upload-drag-container {
+      color: inherit;
+    }
+  }
+}
